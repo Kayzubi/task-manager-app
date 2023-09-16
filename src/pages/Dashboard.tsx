@@ -8,7 +8,6 @@ import { listActions } from '../redux/listSlices'
 
 const Dashboard = () => {
   const { lists } = useAppSelector((state) => state.list)
-  const screenWidth = window.screen.width
 
   const [showAddInput, setshowAddInput] = useState(false)
   const [listTitle, setlistTitle] = useState('')
