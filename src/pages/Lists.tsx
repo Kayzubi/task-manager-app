@@ -40,6 +40,8 @@ const Lists: FC<Props> = ({ data }) => {
     dispatch(listActions.updateList({ ...data, tasks: items }))
   }
 
+  if (!data) return <p>No Tasks</p>
+
   return (
     <div className='list_view'>
       <h3>{title} </h3>
